@@ -1,18 +1,43 @@
 package com.example.androidfinalproject
 
+import Course
+import Hole
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-class HomeFragment : Fragment() {
+import com.example.androidfinalproject.databinding.FragmentHomeBinding
 
+
+class MainFragment : Fragment() {
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
-    }
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val rootView = binding.root
 
+        val ccsFalls: List<Hole> = listOf(
+            Hole(520, 5, 5), Hole(160, 3, 3),
+            Hole(350, 4, 4), Hole(400, 4, 4), Hole(480, 5, 5),
+            Hole(450, 4, 4), Hole(420, 4, 4), Hole(150, 3, 3), Hole(450, 4, 4)
+        )
+        // Inflate the layout for this fragment
+        var ccsFallsScore = 0
+        for (each in ccsFalls) {
+            ccsFallsScore += each.score
+        }
+        val courses = listOf(
+            Course("Country Club of Scranton(Falls)", ccsFalls, 9, ccsFallsScore, ccsFallsScore),
+
+            )
+
+        val myAdapter = CourseAdapter(courses)
+        binding.recyclerView.adapter = myAdapter
+
+        return rootView
+    }
 }
