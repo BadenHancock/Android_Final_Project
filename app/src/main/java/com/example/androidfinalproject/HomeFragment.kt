@@ -27,13 +27,13 @@ class MainFragment : Fragment() {
         )
         // Inflate the layout for this fragment
         val courses = listOf(
-            Course("Country Club of Scranton(Falls)", ccsFalls, 9, 36),
+            Course("Country Club of Scranton (Falls)", ccsFalls, 9, 36),
 
             )
         val round = listOf(
             Round(courses.get(0), listOf(5,4,4,4,5,4,3,3,5), calculateScoreToPar(listOf(5,4,4,4,5,4,3,3,5), courses.get(0))),
             Round(courses.get(0), listOf(5,3,4,4,5,4,3,3,5), calculateScoreToPar(listOf(5,3,4,4,5,4,3,3,5), courses.get(0))),
-            Round(courses.get(0), listOf(5,2,4,4,5,4,3,3,5), calculateScoreToPar(listOf(5,4,4,4,5,4,3,3,5), courses.get(0)))
+            Round(courses.get(0), listOf(5,2,4,4,5,4,3,3,5), calculateScoreToPar(listOf(5,2,4,4,5,4,3,3,5), courses.get(0)))
         )
 
         val myAdapter = RoundAdapter(round)

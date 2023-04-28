@@ -22,6 +22,12 @@ class RoundViewHolder(val binding: ListItemLayoutBinding) :
     fun bindRound(round: Round) {
         currentRound = round
         binding.textViewCourseName.text = currentRound.course.place
-        binding.textViewScore.text = if(currentRound.scoreToPar>1)"+${currentRound.scoreToPar}";else if(currentRound.scoreToPar < 0) currentRound.scoreToPar.toString(); else "E"
+        binding.textViewScore.text =
+            if(currentRound.scoreToPar>0)"+${currentRound.scoreToPar}"
+                else if(currentRound.scoreToPar < 0) "${currentRound.scoreToPar}"
+                 else "E"
+        binding.textViewNumberOfHoles.text = "${currentRound.course.numOfHoles.toString()} holes"
+        binding.textViewRoundDate.text = "4/7/23"
+        binding.textViewCourseLocation.text = "Scranton Pennsylvania"
     }
 }
