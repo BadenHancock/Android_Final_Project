@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#B2BFCA"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textViewCourseName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="6dp"
+        tools:text="Course Name" />
+
+    <TextView
+        android:id="@+id/textViewNumberOfHoles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="328dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:text="18 holes" />
+
+    <TextView
+        android:id="@+id/textViewCourseLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="40dp"
+        tools:text="Course Location" />
+
+    <TextView
+        android:id="@+id/Line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
