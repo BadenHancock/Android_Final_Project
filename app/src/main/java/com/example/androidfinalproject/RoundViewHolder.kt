@@ -3,9 +3,9 @@ package com.example.androidfinalproject
 import Course
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.example.androidfinalproject.databinding.ListItemLayoutBinding
+import com.example.androidfinalproject.databinding.ListItemLayoutRoundBinding
 
-class RoundViewHolder(val binding: ListItemLayoutBinding) :
+class RoundViewHolder(val binding: ListItemLayoutRoundBinding) :
     RecyclerView.ViewHolder(binding.root) {
 
     private lateinit var currentRound: Round

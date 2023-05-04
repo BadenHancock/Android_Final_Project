@@ -4,80 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp"
-    android:background="#B2BFCA">
+    android:background="#E0F1FF"
+    android:padding="8dp">
 
     <TextView
         android:id="@+id/textViewCourseName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textViewRoundDate"
         app:layout_constraintStart_toEndOf="@+id/textViewScore"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Course Name"
-        android:textColor="@color/black"/>
+        tools:text="Course Name" />
 
     <TextView
         android:id="@+id/textViewRoundDate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textViewCourseLocation"
         app:layout_constraintStart_toEndOf="@+id/textViewScore"
         app:layout_constraintTop_toBottomOf="@+id/textViewCourseName"
-        tools:text="Round Date"
-        android:textColor="@color/black"/>
+        tools:text="Round Date" />
 
     <TextView
-        android:id="@+id/textViewNumberOfHoles"
+        android:id="@+id/textViewPar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewCourseLocation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textViewCourseLocation"
-        tools:text="18 holes"
-        android:textColor="@color/black"/>
+        tools:text="18 holes" />
 
     <TextView
         android:id="@+id/textViewCourseLocation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/Line"
-        app:layout_constraintEnd_toStartOf="@+id/textViewNumberOfHoles"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPar"
         app:layout_constraintStart_toEndOf="@+id/textViewScore"
         app:layout_constraintTop_toBottomOf="@+id/textViewRoundDate"
-        tools:text="Course Location"
-        android:textColor="@color/black"/>
+        tools:text="Course Location" />
 
     <TextView
         android:id="@+id/Line"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000000"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        android:textColor="@color/black"/>
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textViewScore"
-        android:layout_width="0dp"
+        android:layout_width="85dp"
         android:layout_height="114.5dp"
         android:gravity="center"
         android:text="120"
+        android:textColor="@color/black"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/black"/>
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

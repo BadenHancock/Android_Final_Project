@@ -4,38 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#B2BFCA"
+    android:background="#E0F1FF"
     android:padding="8dp">
 
     <TextView
         android:id="@+id/textViewCourseName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
         android:textColor="@color/black"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCourseLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="Course Name" />
 
     <TextView
-        android:id="@+id/textViewNumberOfHoles"
+        android:id="@+id/textViewPar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:paddingRight="32dp"
         android:textColor="@color/black"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="328dp"
-        tools:layout_editor_absoluteY="8dp"
-        tools:text="18 holes" />
+        app:layout_constraintBottom_toBottomOf="@+id/textViewYardage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewYardage"
+        tools:text="Par 72" />
 
     <TextView
         android:id="@+id/textViewCourseLocation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
         android:textColor="@color/black"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewYardage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCourseName"
         tools:text="Course Location" />
+
+    <TextView
+        android:id="@+id/textViewYardage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCourseLocation"
+        tools:text="7,200 Yards" />
 
     <TextView
         android:id="@+id/Line"
@@ -43,7 +61,9 @@
         android:layout_height="1dp"
         android:background="#000000"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="128dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewYardage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

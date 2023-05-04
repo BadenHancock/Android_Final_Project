@@ -18,8 +18,6 @@ class CourseSelectorFragment : Fragment() {
     ): View? {
         _binding = FragmentCourseSelectorBinding.inflate(inflater, container, false)
         val rootView = binding.root
-
-
         return rootView
     }
 }
