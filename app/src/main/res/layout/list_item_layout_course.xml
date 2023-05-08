@@ -20,7 +20,7 @@
         tools:text="Course Name" />
 
     <TextView
-        android:id="@+id/textViewPar"
+        android:id="@+id/textViewTotalPar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:paddingRight="32dp"

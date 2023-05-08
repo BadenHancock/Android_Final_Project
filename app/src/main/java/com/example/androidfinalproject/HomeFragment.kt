@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.example.androidfinalproject.databinding.FragmentHomeBinding
 
 
@@ -39,6 +40,10 @@ class MainFragment : Fragment() {
         val myAdapter = RoundAdapter(round)
         binding.recyclerView.adapter = myAdapter
 
+        binding.addRoundButton.setOnClickListener{view ->
+            val action = MainFragmentDirections.actionMainFragmentToMainFragment2()
+            rootView.findNavController().navigate(action)
+        }
         return rootView
     }
 

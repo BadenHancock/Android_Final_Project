@@ -3,11 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainActivity">
-
-
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.androidfinalproject.MainActivity"
-        android:label="MainActivity" />
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.androidfinalproject.MainFragment"
+        android:label="fragment_course_selector"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_mainFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="com.example.androidfinalproject.MainFragment"
+        android:label="fragment_course_selector"
+        tools:layout="@layout/fragment_course_selector" />
 </navigation>
