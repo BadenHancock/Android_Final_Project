@@ -1,13 +1,15 @@
 package com.example.androidfinalproject
 
-import Course
-import Hole
+import com.example.androidfinalproject.Objects.Course
+import com.example.androidfinalproject.Objects.Hole
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
+import com.example.androidfinalproject.Objects.Round
+import com.example.androidfinalproject.RecyclerView.RoundAdapter
 import com.example.androidfinalproject.databinding.FragmentHomeBinding
 
 
@@ -26,7 +28,7 @@ class MainFragment : Fragment() {
             Hole(350, 4), Hole(400, 4), Hole(480, 5),
             Hole(450, 4), Hole(420, 4), Hole(150, 3), Hole(450, 4)
         )
-        // Inflate the layout for this fragment
+
         val courses = listOf(
             Course("Country Club of Scranton (Falls)", ccsFalls, 9, 36),
 

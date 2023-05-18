@@ -1,9 +1,9 @@
-package com.example.androidfinalproject
+package com.example.androidfinalproject.RecyclerView
 
-import Course
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.androidfinalproject.Objects.Round
 import com.example.androidfinalproject.databinding.ListItemLayoutRoundBinding
 
 class RoundAdapter(val RoundList: List<Round>) : RecyclerView.Adapter<RoundViewHolder>() {

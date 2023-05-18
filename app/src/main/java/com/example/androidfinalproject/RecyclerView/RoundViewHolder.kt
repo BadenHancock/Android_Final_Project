@@ -1,8 +1,8 @@
-package com.example.androidfinalproject
+package com.example.androidfinalproject.RecyclerView
 
-import Course
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.androidfinalproject.Objects.Round
 import com.example.androidfinalproject.databinding.ListItemLayoutRoundBinding
 
 class RoundViewHolder(val binding: ListItemLayoutRoundBinding) :
@@ -26,7 +26,7 @@ class RoundViewHolder(val binding: ListItemLayoutRoundBinding) :
             if(currentRound.scoreToPar>0)"+${currentRound.scoreToPar}"
                 else if(currentRound.scoreToPar < 0) "${currentRound.scoreToPar}"
                  else "E"
-        binding.textViewNumberOfHoles.text = "${currentRound.course.numOfHoles.toString()} holes"
+        binding.textViewNumberOfHoles.text = "${currentRound.course.numOfHoles} holes"
         binding.textViewRoundDate.text = "4/7/23"
         binding.textViewCourseLocation.text = "Scranton Pennsylvania"
     }
